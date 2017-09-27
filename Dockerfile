@@ -3,5 +3,5 @@ RUN apt update && apt-get install -y tmux vim
 RUN adduser siuyin --disabled-password
 WORKDIR /home/siuyin
 USER siuyin
-COPY .vimrc .
+ADD .vimrc .
 CMD ["bash"]
